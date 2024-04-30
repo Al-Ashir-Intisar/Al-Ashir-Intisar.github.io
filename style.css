@@ -34,12 +34,7 @@ footer {
     width: 100%;
 }
 
-/* styling for navigation bar */
-
-.horizontal-list {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0;
-    margin: 0;
-    text-emphasis-color: white ;
+ul {
+    text-align: left;
 }
 
