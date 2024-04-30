@@ -33,3 +33,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* styling for navigation bar */
+
+.horizontal-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-list li {
+    display: inline; /* Display list items inline */
+    margin-right: 10px; /* Add space between list items */
+}
+
+.horizontal-list li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
