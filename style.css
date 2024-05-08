@@ -54,3 +54,31 @@ ul {
 
 }
 
+.footnote {
+    color: white;
+}
+
+#scatterplot {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid #aaa;
+    background-color: lightblue;
+    border-width: 5px;
+  }
+  #generateButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .shape {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+  }
+
