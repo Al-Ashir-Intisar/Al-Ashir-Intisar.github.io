@@ -51,7 +51,7 @@ body {
 }
 
 .content {
-    margin-left: 150px;
+    margin-left: 100px;
     padding: 20px;
     transition: margin-left 0.3s ease-in-out;
 }
