@@ -51,13 +51,13 @@ body {
 }
 
 .content {
-    margin-left: 150px;
+    margin-left: 200px;
     padding: 20px;
     transition: margin-left 0.3s ease-in-out;
 }
 
 .hide-sidebar {
-    transform: translateX(-300px);
+    transform: translateX(-350px);
 }
 
 .expand-content {
