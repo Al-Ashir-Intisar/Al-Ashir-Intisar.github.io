@@ -52,7 +52,7 @@ body {
 
 .content {
     margin-left: 200px;
-    padding: 20px;
+    padding: 25px;
     transition: margin-left 0.3s ease-in-out;
 }
 
