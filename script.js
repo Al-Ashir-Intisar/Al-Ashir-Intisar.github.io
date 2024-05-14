@@ -196,3 +196,95 @@ for (var i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+// Do not change!! Page 5 javascript functions 
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    // Getting the scatter plot container
+    const scatterplotContainer = document.getElementById("scatterplot");
+  
+    // Function to generate random points
+    function generateRandomPoints(numPoints) {
+      const points = [];
+      for (let i = 0; i < numPoints; i++) {
+        const x = Math.random() * 590; // Max width of container
+        const y = Math.random() * 390; // Max height of container
+        points.push({ x, y });
+      }
+      return points;
+    }
+  
+    // Function to draw scatter plot
+    function drawScatterPlot(points, shape) {
+      scatterplotContainer.innerHTML = ""; // Clear previous plot
+      points.forEach((point) => {
+        const dot = document.createElement("div");
+        dot.style.position = "absolute";
+        dot.style.width = "10px";
+        dot.style.height = "10px";
+        dot.style.backgroundColor = "black";
+        dot.style.left = point.x + "px";
+        dot.style.top = point.y + "px";
+        dot.style.borderRadius = "50%";
+        scatterplotContainer.appendChild(dot);
+      });
+  
+      // Add axis labels
+      const xAxisLabel = document.createElement("div");
+      xAxisLabel.textContent = "Fairness";
+      xAxisLabel.className = "axis-label x-axis-label";
+      scatterplotContainer.appendChild(xAxisLabel);
+  
+      const yAxisLabel = document.createElement("div");
+      yAxisLabel.textContent = "Accuracy";
+      yAxisLabel.className = "axis-label y-axis-label";
+      scatterplotContainer.appendChild(yAxisLabel);
+    }
+  
+    // Function to determine if a point is in the Pareto frontier
+    function isInParetoFrontier(point, points) {
+      return !points.some(
+        (otherPoint) =>
+          (otherPoint.x >= point.x && otherPoint.y > point.y) ||
+          (otherPoint.y >= point.y && otherPoint.x > point.x)
+      );
+    }
+  
+    // Function to highlight points in Pareto frontier
+    function highlightParetoPoints(points) {
+      points.forEach((point) => {
+        const dot = document.createElement("div");
+        dot.style.position = "absolute";
+        dot.style.width = "10px";
+        dot.style.height = "10px";
+        dot.style.backgroundColor = isInParetoFrontier(point, points)
+          ? "red"
+          : "black";
+        dot.style.left = point.x + "px";
+        dot.style.top = point.y + "px";
+        dot.style.borderRadius = "50%";
+        scatterplotContainer.appendChild(dot);
+      });
+    }
+  
+    // Initial plot with 10 random points
+    let points = generateRandomPoints(25);
+    drawScatterPlot(points, "rectangle");
+  
+    // Event listener for the "Generate Points" button
+    const generateButton = document.getElementById("generateButton");
+    generateButton.addEventListener("click", () => {
+      points = generateRandomPoints(25);
+      drawScatterPlot(points, "rectangle");
+    });
+  
+    // Event listener for the "Show Pareto Curve" button
+    const showCurveButton = document.getElementById("showCurve");
+    showCurveButton.addEventListener("click", () => {
+      scatterplotContainer.innerHTML = ""; // Clear previous plot
+      drawScatterPlot(points, "rectangle");
+      highlightParetoPoints(points);
+    });
+  });
+  
