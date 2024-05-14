@@ -200,7 +200,7 @@ for (var i = 0; i < acc.length; i++) {
 
 // Do not change!! Page 5 javascript functions 
 
-window.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
     // Getting the scatter plot container
     const scatterplotContainer = document.getElementById("scatterplot");
   
