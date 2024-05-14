@@ -180,19 +180,14 @@ function displayData(title, data, containerId) {
   dataDiv.innerHTML += dataHtml;
 }
 
-// Get all accordion buttons
 var acc = document.getElementsByClassName("accordion-btn");
 
-// Add click event listeners to each button
 for (var i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    // Toggle active class to expand/collapse panel
     this.classList.toggle("active");
 
-    // Get the panel associated with the button
     var panel = this.nextElementSibling;
 
-    // Toggle panel's max-height to show/hide content
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
