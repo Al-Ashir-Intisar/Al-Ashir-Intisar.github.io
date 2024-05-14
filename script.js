@@ -203,7 +203,6 @@ for (var i = 0; i < acc.length; i++) {
 
 // Do not change!! Page 5 javascript functions
 
-// window.addEventListener("DOMContentLoaded", (event) => {
 // Getting the scatter plot container
 const scatterplotContainer = document.getElementById("scatterplot");
 
@@ -211,8 +210,8 @@ const scatterplotContainer = document.getElementById("scatterplot");
 function generateRandomPoints(numPoints) {
   const points = [];
   for (let i = 0; i < numPoints; i++) {
-    const x = Math.random() * 590; // Max width of container
-    const y = Math.random() * 390; // Max height of container
+    const x = Math.random() * 590; // Max width - 10 of container
+    const y = Math.random() * 390; // Max height -10 of container
     points.push({ x, y });
   }
   return points;
@@ -270,10 +269,6 @@ function highlightParetoPoints(points) {
     scatterplotContainer.appendChild(dot);
   });
 }
-
-// Initial plot with 10 random points
-// let points = generateRandomPoints(25);
-// drawScatterPlot(points, "rectangle");
 
 // Event listener for the "Generate Points" button
 const generateButton = document.getElementById("generateButton");
