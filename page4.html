@@ -60,12 +60,59 @@
           Differential Privacy is a relatively new approach to
           privacy-preserving data analysis which ensures that (almost, and
           quantifiably) no risk is incurred by joining a statistical database.
+          Application of differential privacy to the data used for these LLMs
+          training can reduce the risk of private information leaks. The idea is
+          to preserve privacy by adding enough noise to the original data so
+          that individuals can not be identified but also the noise does not
+          affect the integrity of the analysis done over the data.
         </p>
         <p>
           Source: Dwork, Cynthia. “Differential Privacy: A Survey of Results.”
           Theory and Applications of Models of Computation, Springer Berlin
           Heidelberg, pp. 1–19, https://doi.org/10.1007/978-3-540-79228-4_1.
         </p>
+
+        <div class="accordion">
+          <button class="accordion-btn">Differential Privacy Simulation</button>
+          <div class="panel">
+            <div>
+              <li></li>
+              <button onclick="generateData()" class="sim_button">
+                Generate 500 Random Observations
+              </button>
+              <button onclick="calculateTrueProportions()" class="sim_button">
+                Calculate True Proportions
+              </button>
+              <button onclick="simulateSurvey()" class="sim_button">
+                Simulate Survey Methods
+              </button>
+              <button
+                onclick="calculateSurveyedProportions()"
+                class="sim_button"
+              >
+                Calculate Surveyed Proportions
+              </button>
+            </div>
+
+            <div id="data"></div>
+
+            <div id="results">
+              <h2>Results</h2>
+              <p>
+                Actual proportion of men who cheat:
+                <span id="actualProportion"></span>
+              </p>
+              <p>
+                Proportion calculated from surveyed data:
+                <span id="surveyedProportion"></span>
+              </p>
+              <p>
+                3/4 of the proportion calculated from surveyed data:
+                <span id="trueYesProportion"></span>
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -94,5 +141,7 @@
         <p>Sources: <a href="#">Source 5</a>, <a href="#">Source 6</a></p>
       </section>
     </div>
+
+    <script src="page4.js"></script>
   </body>
 </html>
