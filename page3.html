@@ -1,108 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future of AI in Healthcare</title>
-    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="page.css" />
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const accordions = document.getElementsByClassName('accordion');
-            for (let i = 0; i < accordions.length; i++) {
-                accordions[i].addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + 'px';
-                    }
-                });
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordions = document.getElementsByClassName("accordion");
+        for (let i = 0; i < accordions.length; i++) {
+          accordions[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
             }
-        });
+          });
+        }
+      });
     </script>
-</head>
+  </head>
 
-<body>
-    <div class="content"> 
-        <header>
-            <h1>What is the Future of AI in Healthcare?</h1>
-        </header>
-        <section>
-            <button class="accordion">Advanced Predictive Analytics</button>
-            <div class="panel">
-                <p>AI will become more sophisticated at predicting disease using genomics and big data analytics. 
-                   This could lead to earlier diagnoses of critical illnesses, such as cancer or heart disease, 
-                   potentially saving lives through timely intervention.
-                </p>
-            </div>
-        </section>
-        
-        <section>
-            <button class="accordion">Improved Patient Experience</button>
-            <div class="panel">
-                <p>
-                   AI is expected to significantly improve patient care management by integrating more seamlessly with electronic health records, 
-                   enhancing patient engagement and personalized care plans. 
-                   AI-driven platforms can facilitate more consistent and continuous care, especially for chronic conditions.
-                </p>
-                <p>Watch this video to see examples of AI improving patient experiences:</p>
-                <iframe
-                width="560"
-                height="315"
-                src="https://youtu.be/qetKUFDDF4A?si=aSloXDR7k-FXGeap"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+  <body>
+    <div class="content">
+      <header>
+        <h1>What is the Future of AI in Healthcare?</h1>
+      </header>
+      <section>
+        <button class="accordion">Advanced Predictive Analytics</button>
+        <div class="panel">
+          <p>
+            AI will become more sophisticated at predicting disease using
+            genomics and big data analytics. This could lead to earlier
+            diagnoses of critical illnesses, such as cancer or heart disease,
+            potentially saving lives through timely intervention.
+          </p>
+        </div>
+      </section>
 
-            </div>
-        </section>
-        
-        <section>
-            <button class="accordion">Robotics in Surgery</button>
-            <div class="panel">
-                <p>
-                   The use of AI in robotic surgery is anticipated to expand, improving precision during operations and reducing recovery times. 
-                   These advancements could make surgeries less invasive and safer, 
-                   with robots performing tasks with a level of accuracy that surpasses human ability.
-                </p>
-                <p>Discover how robotic surgery is evolving with AI by viewing this video:</p>
-                <iframe
-                width="560"
-                height="315"
-                src="https://youtu.be/HHKEHTr7o3Y?si=c91P3va-K1Ezv85U"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-        </section>
-        
-        <section>
-            <button class="accordion">AI in Mental Health</button>
-            <div class="panel">
-                <p>
-                   AI's integration into mental health care offers the potential for transformative change, 
-                   particularly in the early detection and management of mental health issues. By leveraging technologies like speech and text analysis, 
-                   and data analytics, AI can help tailor and enhance treatment strategies. 
-                </p>
-            </div>
-        </section>
-        
-        <section>
-            <button class="accordion">Global Health Initiatives</button>
-            <div class="panel">
-                <p>Addressing disparities in healthcare access, especially in underserved and developing regions is a significant global challenge. 
-                   Artificial intelligence (AI) can play a transformative role in bridging this gap by providing AI-powered diagnostic tools 
-                   that offer critical healthcare support where traditional resources are limited. 
-                </p>
-            </div>
-        </section>
+      <section>
+        <button class="accordion">Improved Patient Experience</button>
+        <div class="panel">
+          <p>
+            AI is expected to significantly improve patient care management by
+            integrating more seamlessly with electronic health records,
+            enhancing patient engagement and personalized care plans. AI-driven
+            platforms can facilitate more consistent and continuous care,
+            especially for chronic conditions.
+          </p>
+          <p>
+            Watch this video to see examples of AI improving patient
+            experiences:
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/qetKUFDDF4A?si=ns2r1RFXgnp3XKW7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section>
+        <button class="accordion">Robotics in Surgery</button>
+        <div class="panel">
+          <p>
+            The use of AI in robotic surgery is anticipated to expand, improving
+            precision during operations and reducing recovery times. These
+            advancements could make surgeries less invasive and safer, with
+            robots performing tasks with a level of accuracy that surpasses
+            human ability.
+          </p>
+          <p>
+            Discover how robotic surgery is evolving with AI by viewing this
+            video:
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HHKEHTr7o3Y?si=ZxY8xkpk2YlOfQt7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section>
+        <button class="accordion">AI in Mental Health</button>
+        <div class="panel">
+          <p>
+            AI's integration into mental health care offers the potential for
+            transformative change, particularly in the early detection and
+            management of mental health issues. By leveraging technologies like
+            speech and text analysis, and data analytics, AI can help tailor and
+            enhance treatment strategies.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <button class="accordion">Global Health Initiatives</button>
+        <div class="panel">
+          <p>
+            Addressing disparities in healthcare access, especially in
+            underserved and developing regions is a significant global
+            challenge. Artificial intelligence (AI) can play a transformative
+            role in bridging this gap by providing AI-powered diagnostic tools
+            that offer critical healthcare support where traditional resources
+            are limited.
+          </p>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>

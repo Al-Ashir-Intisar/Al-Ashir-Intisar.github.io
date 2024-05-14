@@ -1,110 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usage of AI in Healthcare</title>
-    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="page.css" />
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const accordions = document.getElementsByClassName('accordion');
-            for (let i = 0; i < accordions.length; i++) {
-                accordions[i].addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + 'px';
-                    }
-                });
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordions = document.getElementsByClassName("accordion");
+        for (let i = 0; i < accordions.length; i++) {
+          accordions[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
             }
-        });
+          });
+        }
+      });
     </script>
-</head>
+  </head>
 
-<body>
-    <div class="content"> 
-        <header>
-            <h1>Where Can We See AI Being Used in Healthcare?</h1>
-        </header>
-        <section>
-            <button class="accordion">Diagnosis and Treatment Recommendations</button>
-            <div class="panel">
-                <p>
-                    AI systems analyze vast amounts of medical data to assist in diagnosing diseases and suggesting treatment options. 
-                    Notably,AI algorithms are used to interpret imaging data, potentially detecting abnormalities such as tumors or 
-                    fractures faster and more accurately than human radiologists.
-                </p>
-            </div>
-        </section>
+  <body>
+    <div class="content">
+      <header>
+        <h1>Where Can We See AI Being Used in Healthcare?</h1>
+      </header>
+      <section>
+        <button class="accordion">
+          Diagnosis and Treatment Recommendations
+        </button>
+        <div class="panel">
+          <p>
+            AI systems analyze vast amounts of medical data to assist in
+            diagnosing diseases and suggesting treatment options. Notably,AI
+            algorithms are used to interpret imaging data, potentially detecting
+            abnormalities such as tumors or fractures faster and more accurately
+            than human radiologists.
+          </p>
+        </div>
+      </section>
 
-        <section>
-            <button class="accordion">Personalized Medicine</button>
-            <div class="panel">
-                <p>
-                    AI helps in tailoring medical treatment to individual characteristics of each patient. 
-                    By analyzing patterns in data collected from wearable devices, 
-                    AI can make personalized healthcare recommendations and predict health risks.
-                </p>
-                <p>See how personalized medicine is being enhanced with AI technology:</p>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://youtu.be/x4LwXRBIUb4?si=JhVjCZgNGimXBKI7"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe>
-            </div>
-        </section>
+      <section>
+        <button class="accordion">Personalized Medicine</button>
+        <div class="panel">
+          <p>
+            AI helps in tailoring medical treatment to individual
+            characteristics of each patient. By analyzing patterns in data
+            collected from wearable devices, AI can make personalized healthcare
+            recommendations and predict health risks.
+          </p>
+          <p>
+            See how personalized medicine is being enhanced with AI technology:
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/x4LwXRBIUb4?si=v4zEdlB1YoIUlbHX"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
-        <section>
-            <button class="accordion">Operational Automation</button>
-            <div class="panel">
-                <p>
-                    AI automates various routine processes in hospitals and clinics, 
-                    including patient scheduling, data entry, and supply chain operations, 
-                    thus freeing up more time for healthcare providers to focus on patient care.
-                </p>
-            </div>
-        </section>
+      <section>
+        <button class="accordion">Operational Automation</button>
+        <div class="panel">
+          <p>
+            AI automates various routine processes in hospitals and clinics,
+            including patient scheduling, data entry, and supply chain
+            operations, thus freeing up more time for healthcare providers to
+            focus on patient care.
+          </p>
+        </div>
+      </section>
 
-        <section>
-            <button class="accordion">Drug Discovery and Development</button>
-            <div class="panel">
-                <p>
-                    AI accelerates the process of drug discovery by predicting how different chemicals 
-                    will interact and how likely they are to constitute a viable medication, 
-                    significantly reducing the time and cost of bringing new drugs to market.
-                </p>
-            </div>
-        </section>
+      <section>
+        <button class="accordion">Drug Discovery and Development</button>
+        <div class="panel">
+          <p>
+            AI accelerates the process of drug discovery by predicting how
+            different chemicals will interact and how likely they are to
+            constitute a viable medication, significantly reducing the time and
+            cost of bringing new drugs to market.
+          </p>
+        </div>
+      </section>
 
-        <section>
-            <button class="accordion">Virtual Health Assistants</button>
-            <div class="panel">
-                <p>
-                    Virtual assistants can provide 24/7 health monitoring and basic healthcare, 
-                    such as offering medical information, scheduling doctor's appointments, 
-                    or reminding patients to take their medication.
-                </p>
-            </div>
-        </section>
+      <section>
+        <button class="accordion">Virtual Health Assistants</button>
+        <div class="panel">
+          <p>
+            Virtual assistants can provide 24/7 health monitoring and basic
+            healthcare, such as offering medical information, scheduling
+            doctor's appointments, or reminding patients to take their
+            medication.
+          </p>
+        </div>
+      </section>
 
-        <section>
-            <button class="accordion">Privacy and Data Protection in AI Healthcare</button>
-            <div class="panel">
-                <p>
-                    The use of AI in healthcare raises significant privacy concerns, especially regarding the handling of patient data. 
-                    There is a critical need for stringent data protection measures to safeguard sensitive health information. 
-                    Ensuring compliance with global privacy laws such as GDPR in Europe and HIPAA in the United States is essential 
-                    for maintaining patient trust and securing health data against breaches.
-                </p>
-            </div>
-        </section>
+      <section>
+        <button class="accordion">
+          Privacy and Data Protection in AI Healthcare
+        </button>
+        <div class="panel">
+          <p>
+            The use of AI in healthcare raises significant privacy concerns,
+            especially regarding the handling of patient data. There is a
+            critical need for stringent data protection measures to safeguard
+            sensitive health information. Ensuring compliance with global
+            privacy laws such as GDPR in Europe and HIPAA in the United States
+            is essential for maintaining patient trust and securing health data
+            against breaches.
+          </p>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
