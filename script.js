@@ -219,7 +219,7 @@ function generateRandomPoints(numPoints) {
 }
 
 // Function to draw scatter plot
-function drawScatterPlot(points, shape) {
+function drawScatterPlot(points) {
   // Add axis labels
   const xAxisLabel = document.createElement("div");
   xAxisLabel.textContent = "Fairness";
@@ -279,13 +279,13 @@ function highlightParetoPoints(points) {
 const generateButton = document.getElementById("generateButton");
 generateButton.addEventListener("click", () => {
   points = generateRandomPoints(25);
-  drawScatterPlot(points, "rectangle");
+  drawScatterPlot(points);
 });
 
 // Event listener for the "Show Pareto Curve" button
 const showCurveButton = document.getElementById("showCurve");
 showCurveButton.addEventListener("click", () => {
   scatterplotContainer.innerHTML = ""; // Clear previous plot
-  drawScatterPlot(points, "rectangle");
+  drawScatterPlot(points);
   highlightParetoPoints(points);
 });
